@@ -1,18 +1,22 @@
+п»їusing System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using NUnit.Framework;
 using TRPO_Lab3.Library;
 using System;
 
 namespace TRPO_Lab3.Tests
 {
-    public class Tests
+    public class Test2
     {
-
         [Test]
-        public void Test1()
+        public void Test21()
         {
-            const int radius = 5;
+            const int radius = -6;
             const int angleInDegrees = 60;
-            const double expected = 78.54;
+            const double expected = 113.09;
 
             var area = MathLib.CalculateSphereSectorSurfaceArea(radius, angleInDegrees);
             Assert.AreEqual(expected, area, 0.01);
@@ -20,19 +24,18 @@ namespace TRPO_Lab3.Tests
         }
         public void TestMethod()
         {
-            // Организация
+            // РћСЂРіР°РЅРёР·Р°С†РёСЏ
             var exceptionType = typeof(ArgumentException);
 
-            // Действие
+            // Р”РµР№СЃС‚РІРёРµ
             var exception = Assert.Throws<ArgumentException>(() => ThrowException());
 
-            // Утверждение
+            // РЈС‚РІРµСЂР¶РґРµРЅРёРµ
             Assert.AreEqual(exceptionType, exception.GetType());
         }
         private void ThrowException()
         {
             throw new ArgumentException();
         }
-        
     }
 }
