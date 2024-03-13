@@ -10,14 +10,31 @@ namespace TRPO_Lab3.Library
     {
         public static double CalculateSphereSectorSurfaceArea(double radius, double angleInDegrees)
         {
-            // Переводим угол из градусов в радианы
-            double angleInRadians = angleInDegrees * Math.PI / 180;
+            try
+            {
+                if (radius <= 0)
+                {
+                    throw new Exception("Радиус должен быть задан положительным числом");
+                }
+                if (angleInDegrees <= 0)
+                {
+                    throw new Exception("Угол должен быть задан положительным числом");
+                }
 
-            // Рассчитываем площадь поверхности шарового сектора
-            double surfaceArea = 2 * Math.PI * radius * radius * (1 - Math.Cos(angleInRadians));
+                double angleInRadians = angleInDegrees * Math.PI / 180;
+                double S = 2 * Math.PI * radius * radius * (1 - Math.Cos(angleInRadians));
+                return S;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("произошло исключение: " + ex.Message);
+                Console.WriteLine("нажмите любую клавишу для выхода...");
+                Console.ReadKey(); // для ожидания нажатия клавиши перед закрытием окна
+                return -1; // возвращаем какое-то значение, чтобы компилятор не ругался на отсутствие возврата в блоке catch
+            }
 
-            return surfaceArea;
         }
+        
 
 
     }

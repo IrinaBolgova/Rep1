@@ -6,3 +6,5 @@
     double angleInDegrees = double.Parse(Console.ReadLine());
     double area = MathLib.CalculateSphereSectorSurfaceArea(radius, angleInDegrees);
     Console.WriteLine("Площадь поверхности шарового сектора: " + area);
+
+
