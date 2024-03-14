@@ -25,3 +25,4 @@ jobs:
         with:
           name: code-coverage-report
           path: output/test/code-coverage.html
+    name: $projectName.win-x64
