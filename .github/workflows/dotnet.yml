@@ -26,3 +26,11 @@ jobs:
       run: dotnet build TRPO-Lab3.sln --no-restore
     - name: Test
       run: dotnet test TRPO-Lab3.sln --no-build --verbosity normal
+publish_win:
+  stage: publish
+  script:
+    - dotnet publish TRPO-Lab3.ConsoleApp -c Release -r win-x64 -o ./$projectName.win-x64
+  artifacts:
+    name: $projectName.win-x64
+    paths: 
+        - $publishDir/$projectName.win-x64
