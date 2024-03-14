@@ -6,7 +6,7 @@ jobs:
   build_and_test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Upload repository
         uses: actions/checkout@v4
       - name: npm install, build, and test
         run: |
