@@ -29,5 +29,5 @@ jobs:
     - name: Upload ConsoleApp
       uses: actions/upload-artifact@v4
       with:
-        path: VisualStudioBolgova/TRPO-Lab3.ConsoleApp/bin/Debug
+        path: Rep1/TRPO-Lab3.ConsoleApp/bin/Debug
 
