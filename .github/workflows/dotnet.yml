@@ -29,6 +29,5 @@ jobs:
     - name: Upload ConsoleApp
       uses: actions/upload-artifact@v4
       with:
-        name: TRPO-Lab3  # Заменить на имя вашего артефакта
-        path: Rep1    # Заменить на путь к файлу или директории, которую нужно загрузить
+        path: VisualStudioBolgova/TRPO-Lab3.ConsoleApp/bin/Debug
 
