@@ -24,7 +24,7 @@ namespace TRPO_Lab3.Tests
             const double radius = -6;
             const double angleInDegrees = 60;
             const double expected = 113.09;
-            Assert.Throws<Exception>(() => MathLib1.CalculateSphereSectorSurfaceArea(radius, angleInDegrees));
+            Assert.Throws<Exception>(() => MathLib.CalculateSphereSectorSurfaceArea(radius, angleInDegrees));
         }
 
     }
