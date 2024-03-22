@@ -8,29 +8,29 @@ namespace TRPO_Lab3.Library
 {
     public class MathLib
     {
-        public static double CalculateSphereSectorSurfaceArea(double radius, double angleInDegrees)
+        public static double CalculateSphereSectorSurfaceArea(double radius_shara, double radius_okrujnosti, double height)
         {
             try
             {
-                if (radius <= 0)
+                if (radius_shara <= 0)
                 {
                     throw new Exception("Радиус должен быть задан положительным числом");
                 }
-                if (angleInDegrees <= 0)
+                if (radius_okrujnosti <= 0)
                 {
                     throw new Exception("Угол должен быть задан положительным числом");
                 }
 
-                double angleInRadians = angleInDegrees * Math.PI / 180;
-                double S = 2 * Math.PI * radius * radius * (1 - Math.Cos(angleInRadians));
+                double radius_okrujnostia = radius_okrujnosti * Math.PI / 180;
+                double S = Math.PI * radius_shara * radius_shara * (2 * height + radius_okrujnosti);
                 return S;
             }
             catch (Exception ex)
             {
                 Console.WriteLine("произошло исключение: " + ex.Message);
                 Console.WriteLine("нажмите любую клавишу для выхода...");
-                Console.ReadKey(); // для ожидания нажатия клавиши перед закрытием окна
-                return -1; // возвращаем какое-то значение, чтобы компилятор не ругался на отсутствие возврата в блоке catch
+                Console.ReadKey(); 
+                return -1;
             }
 
         }

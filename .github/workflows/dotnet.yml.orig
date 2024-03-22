@@ -25,12 +25,21 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
+<<<<<<< HEAD
+      run: dotnet test TRPO-Lab3.sln --no-build --verbosity normal
+publish_win:
+  stage: publish
+  script:
+    - dotnet publish TRPO-Lab3.ConsoleApp -c Release -r win-x64 -o ./$projectName.win-x64
+  artifacts:
+    name: $projectName.win-x64
+    paths: 
+        - $publishDir/$projectName.win-x64
+=======
       run: dotnet test --no-build --verbosity normal
     - name: Upload ConsoleApp
       uses: actions/upload-artifact@v4
       with:
         path: TRPO-Lab3.ConsoleApp/bin/Debug
 
-
-    paths: 
-        - $publishDir/$projectName.win-x64
+>>>>>>> 4d72e1158598b206e3f35b89e7ded8253bbeb08e

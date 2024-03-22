@@ -1,0 +1,53 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock
+            Grid.Row="0"
+            FontSize="24"
+            Text="Введите значения для вычисления площади шарового сектора" />
+
+        <Grid Margin="0,9,0,0" Grid.RowSpan="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="397*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <TextBox Grid.Row="1" Text="" Margin="174,28,446,374" Grid.Column="1" />
+            <TextBlock Grid.Row="1" Text="Введите радиус окружности:" Margin="4,28,580,320" Grid.Column="1" />
+            <TextBox Grid.Row="1" Text="" Margin="174,57,446,345" Grid.Column="1" />
+            <TextBlock Grid.Row="1" Text="Введите высоту:" Margin="4,57,620,327" Grid.Column="1" />
+            <TextBox Grid.Row="1" Text="" Margin="53,144,524,261" Grid.Column="1" />
+            <TextBlock Grid.Row="1" Text="Ответ:" Margin="4,144,712,240" Grid.Column="1" />
+            <TextBox Grid.Row="1" Text="" Margin="174,86,446,319" Grid.Column="1" />
+            <TextBlock Grid.Row="1" Text="Введите радиус шара:" Margin="4,86,655,298" Grid.Column="1" />
+            <Image Source="/471072_html_8f9efc36e2fe2ba3.jpg" Margin="365,28,226,28" Grid.Column="1" Grid.Row="1"/>
+            <TextBlock Grid.Row="1" Text="Формула:" Margin="646,173,88,236" Grid.Column="1" />
+            <TextBlock Grid.Row="1" Text="S= π * R^2 * (2 * h - a)" Margin="614,195,27,213" Grid.Column="1" />
+            <TextBlock Grid.Row="1" Text="где:" Margin="587,218,147,191" Grid.Column="1" />
+            <TextBlock Grid.Row="1" Text="R - радиус шара" Margin="587,235,88,174" Grid.Column="1" />
+            <TextBlock Grid.Row="1" Text="h - высота отсекаемой шляпки" Margin="587,256,10,152" Grid.Column="1" />
+            <TextBlock Grid.Row="1" Text="a - радиус окружности сечения" Margin="587,278,10,130" Grid.Column="1" />
+        </Grid>
+
+    </Grid>
+
+
+</Window>

@@ -23,7 +23,6 @@
   <ItemGroup>
     <ProjectReference Include="..\TRPO-Lab3.Library\TRPO-Lab3.Library.csproj" />
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <SsdtUnitTestVersion>3.1</SsdtUnitTestVersion>
   </PropertyGroup>
