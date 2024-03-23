@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="471072_html_8f9efc36e2fe2ba3.jpg" />
+    <None Remove="images\471072_html_8f9efc36e2fe2ba3.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TRPO-Lab3.Library\TRPO-Lab3.Library.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="471072_html_8f9efc36e2fe2ba3.jpg" />
+    <Resource Include="images\471072_html_8f9efc36e2fe2ba3.jpg" />
+  </ItemGroup>
+
+</Project>

@@ -95,7 +95,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="471072_html_8f9efc36e2fe2ba3.jpg" />
+    <ProjectReference Include="..\TRPO-Lab3.Library\TRPO-Lab3.Library.csproj">
+      <Project>{c5f81b90-7f2c-4878-8ed5-f522f319f4f0}</Project>
+      <Name>TRPO-Lab3.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
