@@ -1,8 +1,30 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model ModelViews
 
-cvhbjnjhgb
-@DateTime.Now
+@{
+    ViewData["Title"] = "Расчет площади шарового сектора";
+}
+<h1>Расчет площади шарового сектора</h1>
+<form method="post" asp-controller="TRPO_Lab3" asp-action="Check">
+    <label asp-for="radius_shara"></label>
+    <input asp-for="radius_shara" placeholder=" введите значение радиуса шара" />
+    <span asp-validation-for="radius_shara"></span>
+</form>
+<form method="post" asp-controller="TRPO_Lab3" asp-action="Check">
+    <label asp-for="radius_okrujnosti"></label>
+    <input asp-for="radius_okrujnosti" placeholder=" введите значение радиуса окружности" />
+    <span asp-validation-for="radius_okrujnosti"></span>
+</form>
+<form method="post" asp-controller="TRPO_Lab3" asp-action="Check">
+    <label asp-for="height"></label>
+    <input asp-for="height" placeholder=" введите значение высоты" />
+    <span asp-validation-for="height"></span>
+    <input type="submit" value="Рассчитать" />
+
+    <div class="form-container img">
+        <!-- Ваша форма здесь -->
+        <form method="post" asp-controller="TRPO_Lab3" asp-action="Index">
+            <!-- Поля формы -->
+            <img src="~/img/471072_html_8f9efc36e2fe2ba3.jpg" alt="Шаровый сектор">
+        </form>
+        <div>
+</form>

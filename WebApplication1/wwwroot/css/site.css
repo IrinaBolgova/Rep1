@@ -1,18 +1,68 @@
-html {
-  font-size: 14px;
+* {
+    font-family: 'Century Gothic';
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+h1 {
+    width: 100%;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    backgroun: #333;
+    border-bottom: 2px solid #000;
+    display: flex;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+label {
+    widows: 100%;
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 1px;
+    margin-left: 15px;
 }
 
-body {
-  margin-bottom: 60px;
+main button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border 0;
+    margin-top: 15px;
+    background: #ff0000;
+    cursor: pointer;
+    justify-content: center;
+    margin: 15px;
+    align-items: center;
+}
+
+.form-container {
+    /*width: 50%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;*/ /* или center, если хотите выровнять по центру */
+    /*justify-content: center;*/ /* или space-between, если хотите равномерное распределение */
+    /*padding: 15px;*/
+    width: 75%;
+    display: flex;
+    flex-direction: row-reverse; /* Изменяем направление на обратное горизонтальное */
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+    .form-container img {
+        width: 50%;
+        min-width: 400px;
+        margin-left: auto; /* Автоматический отступ слева, чтобы изображение оставалось справа */
+        margin-right: 15px; /* Отступ изображения справа */
+    }
+
+main input:not([type="submit"]) {
+    width: 90%;
+    padding: 10px 14px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    outline: none;
+    margin-top: 7px;
+    margin-left: 15px;
 }
