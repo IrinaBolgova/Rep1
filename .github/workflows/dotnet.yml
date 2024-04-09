@@ -30,7 +30,3 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         path: TRPO-Lab3.ConsoleApp/bin/Debug
-
-
-    paths: 
-        - $publishDir/$projectName.win-x64
