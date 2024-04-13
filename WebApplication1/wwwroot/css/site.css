@@ -35,15 +35,10 @@ main button[type="submit"] {
 }
 
 .form-container {
-    /*width: 50%; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;*/ /* или center, если хотите выровнять по центру */
-    /*justify-content: center;*/ /* или space-between, если хотите равномерное распределение */
-    /*padding: 15px;*/
+   
     width: 75%;
     display: flex;
-    flex-direction: row-reverse; /* Изменяем направление на обратное горизонтальное */
+    flex-direction: row-reverse; 
     align-items: center;
     justify-content: center;
     padding: 15px;
@@ -52,8 +47,8 @@ main button[type="submit"] {
     .form-container img {
         width: 50%;
         min-width: 400px;
-        margin-left: auto; /* Автоматический отступ слева, чтобы изображение оставалось справа */
-        margin-right: 15px; /* Отступ изображения справа */
+        margin-left: auto; 
+        margin-right: 15px; 
     }
 
 main input:not([type="submit"]) {

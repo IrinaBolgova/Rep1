@@ -11,15 +11,15 @@ namespace TRPO_Lab3.Library
         public static double CalculateSphereSectorSurfaceArea(double radius_shara, double radius_okrujnosti, double height)
         {
             
-                if (radius_shara <= 0)
+                if (radius_shara < 0)
                 {
                     throw new Exception("Радиус должен быть задан положительным числом");
                 }
-                if (radius_okrujnosti <= 0)
+                if (radius_okrujnosti < 0)
                 {
                     throw new Exception("Угол должен быть задан положительным числом");
                 }
-                if (height <= 0)
+                if (height < 0)
                 {
                     throw new Exception("Высота должна быть задана положительным числом");
                 }
